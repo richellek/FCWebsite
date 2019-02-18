@@ -1,0 +1,24 @@
+{
+  "name": "fcwebsite",
+  "version": "1.0.0",
+  "description": "Whatcom Foster Closet Website",
+  "main": "index.json",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richellek/FCWebsite.git"
+  },
+  "author": "Richelle Kikuji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richellek/FCWebsite/issues"
+  },
+  "homepage": "https://github.com/richellek/FCWebsite#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
