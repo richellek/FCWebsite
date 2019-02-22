@@ -1,4 +1,14 @@
-.row-header{
+.container-fluid {
+    margin:0px;
+    padding:0px;
+}
+
+.row {
+    margin:0px;
+    padding:0px;  
+}
+
+.row-header {
     margin:0px;
     padding:0px;
 }
@@ -17,10 +27,19 @@
     padding: 20px 0px 20px 0px;
 }
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: darkred ;
+    padding:40px 0px 0px 0px;
+    margin:0px;
+    background: white ;
     color:white;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+}
+
+.header {
+    margin:0px;
+    padding:0px;
 }
 
 address{
@@ -30,7 +49,7 @@ address{
 }
 
 body{
-    padding:50px 0px 0px 0px;
+    padding:70px 0px 0px 0px;
     z-index:0;
 }
 
@@ -45,7 +64,7 @@ body{
     padding: 0px 20px;
 }
 .navbar-brand {
-    padding: 0 15px;
+    padding: 10 15px;
     height: 113px;
 }
 
