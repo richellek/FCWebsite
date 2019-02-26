@@ -1,6 +1,6 @@
 .body {
   padding:150px 0px 0px 0px;
-  z-index:0;
+  z-index: 0;
 }
 
 
@@ -27,15 +27,71 @@ address {
   margin-top: 200px;
   position: relative;
   z-index: 9;
-  height: 400px;
+  height: 450px;
 }
 .carousel img {
   margin-top: 120px;
   height: 100%;
   width: 100%;
 }
+.carousel-caption {
+  background-color: transparent;
+  position: relative;
+  max-width: 200px;
+  padding: 0px 20px 0px 20px;
+  margin-top: -320px;
+  margin-right: 50px;
+  text-align: right;
+  float:right;
+}
+.carousel-caption h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .lead {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+  font-size: 12px;
+}
 
 /*Responsive*/
+@media (min-width: 410px) {
+  .carousel-container {
+    margin-top: 200px;
+    position: relative;
+    z-index: 9;
+    height: 500px;
+  }
+  .carousel img {
+    margin-top: 120px;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-caption {
+    max-width: 250px;
+    margin-top: -340px;
+    margin-right: 90px;
+  }
+  .carousel-caption h1 {
+    font-size: 22px;
+  }
+  .carousel-caption .lead {
+    font-size: 14px;
+  }
+  .carousel-caption .btn {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-nav {
     padding: 0px 10px 0px 10px;
@@ -55,6 +111,20 @@ address {
     margin-top: 120px;
     height: 100%;
     width: 100%;
+  }
+  .carousel-caption {
+    max-width: 250px;
+    margin-top: -370px;
+    margin-right: 160px;
+  }
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+  .carousel-caption .lead {
+    font-size: 16px;
+  }
+  .carousel-caption .btn {
+    font-size: 16px;
   }
 }
 
@@ -78,16 +148,29 @@ address {
       height: 100%;
       width: 100%;
     }
+    .carousel-caption {
+      max-width: 300px;
+      margin-top: -400px;
+      margin-right: 200px;
+    }
+    .carousel-caption h1 {
+      font-size: 28px;
+    }
+    .carousel-caption .lead {
+      font-size: 20px;
+    }
+    .carousel-caption .btn {
+      font-size: 20px;
+    }
   }
+
   @media (min-width: 1220px) {
     .navbar-nav {
       padding: 0px 40px 0px 40px;
     }
-    
     .nav-item {
       padding: 0px 40px 0px 40px;
     }
-    
     .carousel-container {
       margin-top: 200px;
       position: relative;
@@ -99,29 +182,22 @@ address {
       height: 100%;
       width: 100%;
     }
+    .carousel-caption {
+      max-width: 350px;
+      margin-top: -450px;
+      margin-right: 300px;
+    }
+    .carousel-caption h1 {
+      font-size: 32px;
+    }
+    .carousel-caption .lead {
+      font-size: 24px;
+    }
+    .carousel-caption .btn {
+      font-size: 24px;
+    }
   }
 
-
-/* CUSTOMIZE THE CAROUSEL 
-
-.carousel-caption {
-  background-color: transparent;
-  position: static;
-  max-width: 550px;
-  padding: 0 20px;
-  margin-top: 200px;
-}
-.carousel-caption h1,
-.carousel-caption .lead {
-  margin: 0;
-  line-height: 1.25;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
-.carousel-caption .btn {
-  margin-top: 10px;
-}
-*/
 
 
 /* MARKETING CONTENT
