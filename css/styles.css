@@ -69,7 +69,6 @@
   text-shadow: 0 2px 10px rgba(0,0,0,.4);
   text-align: center;
   position: relative;
-  
 }
 .card-text {
   font-size: 75%;
@@ -122,6 +121,18 @@ text-align: center;
   }
   .carousel-caption .btn {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 450px) {
+  .carousel-caption {
+    margin-right: 90px;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel-caption {
+    margin-right: 120px;
   }
 }
 
