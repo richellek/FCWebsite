@@ -109,6 +109,14 @@
 #b-card {
 vertical-align: center;
 }
+#l-card {
+  font-size: 50%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  line-height: 1;
+  background-color: #151531;
+  vertical-align: center;
+}
 
 /*Footer*/
 .footer{
