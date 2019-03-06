@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social//bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>The Foster Closet</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+
+        <!--  Show this only on mobile to medium screens  -->
+          <a href="index.html"><img src="images/FCLogo.png" class="navbar-brand d-sm-none"></a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <!--  /mobile to medium screens  -->
+        
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+        
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!--  /Use flexbox utility  -->
+            
+        <!--   Navigation for only lg screens and up   -->
+           <a href="index.html" ><img src="images/FCLogo.png" class="navbar-brand d-none d-sm-block"></a> 
+        
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="volunteer.html">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </li>
+            </ul>
+          </div>
+        </nav> <!--  / Navigation for only lg screens and up   -->
+
+
+      <!-- Carousel-->
+      <div id="contactCarousel" class="carousel">   
+            <div class="carousel-inner">
+                    <img src="/images/Register.jpg">
+                    <div class="carousel-container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- /.carousel -->
+    
+          <form style="background-color: rgb(230, 230, 230)" class="form-horizontal" action="" method="post">
+                    <div class="col-12">
+                    <div class="well well-sm">
+                        <fieldset>
+                        <legend class="text-left"><h4>Register to Shop</h4>
+                        <p>Please provide the following info about yourself and each child placed in your home. 
+                            Then upload a copy of each child’s placement letter.</p></legend>
+                        <hr>
+                
+                        <!-- Name input-->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="name">Name</label>
+                            <div class="col-md-10">
+                            <input type="required" id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- Email input-->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="email">E-mail</label>
+                            <div class="col-md-10">
+                            <input type="required" id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- date input-->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="date">Today's Date</label>
+                            <div class="col-md-3">
+                            <input id="date" name="date" type="date" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Parent Type -->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="date">Type of Parent</label>
+                            <div class="col-md-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="foster" id="foster" value="foster">
+                                <label class="form-check-label" for="foster">Foster Parent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="relative" id="relative" value="relative">
+                                <label class="form-check-label" for="relative">Relative Caregiver</label>
+                            </div>
+                        </div>
+                        </div>            
+                        <hr>
+                        
+                        <!--Child 1 Name input-->
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                    <h5 style="color:#dc3545">Child 1</h5>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="child1name">Child's Name</label>
+                            <div class="col-md-10">
+                            <input type="required" id="child1name" name="child1name" type="text" placeholder="Child's Full Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Gender Age-->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="gender1">Gender</label>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="gender1">
+                                        <option>Select Gender</option>
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                </div>
+                            </div>  
+                            <label class="col-md-2 offset-md-2 control-label" for="age1">Age</label>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="age1">
+                                        <option>Select Age</option>
+                                        <option><1</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                    </select>
+                                </div>
+                            </div>   
+                        </div> 
+
+                         <!-- Ethnicity CaseWorker -->
+                        <div class="form-row">
+                            <label class="col-md-2 control-label" for="race1">Race</label>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control" id="race1">
+                                            <option>Select Race</option>
+                                            <option>American Indian or Alaska Native</option>
+                                            <option>Asian</option>
+                                            <option>Black or African American</option>
+                                            <option>Native Hawaiian or Other Pacific Islander</option>
+                                            <option>Hispanic or Latino or Spanish Origin</option>
+                                            <option>White</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                            <label class="col-md-2 offset-md-2 control-label" for="caseworker1">Case Worker</label>
+                                <div class="col-md-3">
+                                <input type="required" id="caseworker1" name="caseworker1" type="text" placeholder="Case Worker" class="form-control">
+                                </div>    
+                        </div>
+                        <div class="form-row">
+                                <label class="col-md-2 control-label" for="file1">Placement Letter</label>
+                            <input type="file" style="background-color: white"/>
+                        </div>
+                        <hr>
+
+                        <!--Child 2 Name input-->
+                        <div class="form-row">
+                                <div class="col-md-3">
+                                        <h5 style="color:#dc3545">Child 2</h5>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="child2name">Child's Name</label>
+                                <div class="col-md-10">
+                                <input id="child2name" name="child2name" type="text" placeholder="Child's Full Name" class="form-control">
+                                </div>
+                            </div>
+    
+                            <!-- Gender Age-->
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="gender2">Gender</label>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control" id="gender2">
+                                            <option>Select Gender</option>
+                                            <option>Female</option>
+                                            <option>Male</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                                <label class="col-md-2 offset-md-2 control-label" for="age2">Age</label>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control" id="age2">
+                                            <option>Select Age</option>
+                                            <option><1</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                            </div> 
+    
+                             <!-- Ethnicity CaseWorker -->
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="race2">Race</label>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <select class="form-control" id="race2">
+                                                <option>Select Race</option>
+                                                <option>American Indian or Alaska Native</option>
+                                                <option>Asian</option>
+                                                <option>Black or African American</option>
+                                                <option>Native Hawaiian or Other Pacific Islander</option>
+                                                <option>Hispanic or Latino or Spanish Origin</option>
+                                                <option>White</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                <label class="col-md-2 offset-md-2 control-label" for="caseworker2">Case Worker</label>
+                                    <div class="col-md-3">
+                                    <input type="required" id="caseworker2" name="caseworker2" type="text" placeholder="Case Worker" class="form-control">
+                                    </div>    
+                            </div>
+                            <div class="form-row">
+                                    <label class="col-md-2 control-label" for="file2">Placement Letter</label>
+                                <input type="file" style="background-color: white"/>
+                            </div>
+                            <hr>
+
+                        <!--Child 3 Name input-->
+                        <div class="form-row">
+                                <div class="col-md-3">
+                                        <h5 style="color:#dc3545">Child 3</h5>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="child3name">Child's Name</label>
+                                <div class="col-md-10">
+                                <input type="required" id="child3name" name="child3name" type="text" placeholder="Child's Full Name" class="form-control">
+                                </div>
+                            </div>
+    
+                            <!-- Gender Age-->
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="gender3">Gender</label>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control" id="gender3">
+                                            <option>Select Gender</option>
+                                            <option>Female</option>
+                                            <option>Male</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                                <label class="col-md-2 offset-md-2 control-label" for="age3">Age</label>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control" id="age3">
+                                            <option>Select Age</option>
+                                            <option><1</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                            </div> 
+    
+                             <!-- Ethnicity CaseWorker -->
+                            <div class="form-row">
+                                <label class="col-md-2 control-label" for="race3">Race</label>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <select class="form-control" id="race3">
+                                                <option>Select Race</option>
+                                                <option>American Indian or Alaska Native</option>
+                                                <option>Asian</option>
+                                                <option>Black or African American</option>
+                                                <option>Native Hawaiian or Other Pacific Islander</option>
+                                                <option>Hispanic or Latino or Spanish Origin</option>
+                                                <option>White</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                <label class="col-md-2 offset-md-2 control-label" for="caseworker1">Case Worker</label>
+                                    <div class="col-md-3">
+                                    <input type="required" id="caseworker3" name="caseworker3" type="text" placeholder="Case Worker" class="form-control">
+                                    </div>    
+                            </div>
+                            <div class="form-row">
+                                    <label class="col-md-2 control-label" for="file3">Placement Letter</label>
+                                <input type="file" style="background-color: white"/>
+                            </div>
+                            <hr>
+    
+                            <!--Child 4 Name input-->
+                            <div class="form-row">
+                                    <div class="col-md-3">
+                                            <h5 style="color:#dc3545">Child 4</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="form-row">
+                                    <label class="col-md-2 control-label" for="child4name">Child's Name</label>
+                                    <div class="col-md-10">
+                                    <input id="child4name" name="child4name" type="text" placeholder="Child's Full Name" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <!-- Gender Age-->
+                                <div class="form-row">
+                                    <label class="col-md-2 control-label" for="gender4">Gender</label>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <select class="form-control" id="gender4">
+                                                <option>Select Gender</option>
+                                                <option>Female</option>
+                                                <option>Male</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                    <label class="col-md-2 offset-md-2 control-label" for="age4">Age</label>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <select class="form-control" id="age4">
+                                                <option>Select Age</option>
+                                                <option><1</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                            </select>
+                                        </div>
+                                    </div>   
+                                </div> 
+                                
+                                 <!-- Ethnicity CaseWorker -->
+                                <div class="form-row">
+                                    <label class="col-md-2 control-label" for="race4">Race</label>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <select class="form-control" id="race4">
+                                                    <option>Select Race</option>
+                                                    <option>American Indian or Alaska Native</option>
+                                                    <option>Asian</option>
+                                                    <option>Black or African American</option>
+                                                    <option>Native Hawaiian or Other Pacific Islander</option>
+                                                    <option>Hispanic or Latino or Spanish Origin</option>
+                                                    <option>White</option>
+                                                </select>
+                                            </div>
+                                        </div>  
+                                    <label class="col-md-2 offset-md-2 control-label" for="caseworker4">Case Worker</label>
+                                        <div class="col-md-3">
+                                        <input type="required" id="caseworker4" name="caseworker4" type="text" placeholder="Case Worker" class="form-control">
+                                        </div>    
+                                </div>
+                                <div class="form-row">
+                                        <label class="col-md-2 control-label" for="file4">Placement Letter</label>
+                                    <input type="file" style="background-color: white"/>
+                                </div>
+        
+                                <hr>    
+
+                        <!-- Form actions -->
+                        <div class="form-row">
+                            <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                            </div>
+                        </div>
+                        </fieldset>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>  
+    </body>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                    <div id="location" class="col-12 col-sm-4">
+                    <h5>Location</h5>
+                    <address>
+                      1504 Larrabee Ave<br>
+		              Bellingham, WA 98225<br>
+                   </address>
+                </div>
+                <div id="hours" class="col-12 col-sm-4">
+                    <h5>Hours of Operation</h5>
+                    <address>
+                        Saturdays<br>
+                        10 AM–2 PM<br>
+                </div>
+                <div id="social" class="col-12 col-sm-4 align-self-center">
+                        <a class="btn btn-social-icon" href="mailto:whatcomfostercloset@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/whatcomfostercloset"><i class="fa fa-facebook fa-lg"></i></a>
+                </div>
+           </div>
+           <div><br></div>
+           <div class="row align-self-bottom copyright">             
+                <div class="col-12">
+                    <p>© Copyright 2019 House of Rubies</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
