@@ -34,7 +34,7 @@
                 <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link" href="/about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -51,7 +51,7 @@
                 <a class="nav-link" href="shop.html">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Volunteer</a>
+                <a class="nav-link active" href="#">Volunteer</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="donate.html">Donate</a>
@@ -62,14 +62,14 @@
 
 
      <!-- Carousel-->
-     <div id="aboutCarousel" class="carousel">   
+     <div id="volunteerCarousel" class="carousel">   
         <div class="carousel-inner">
-                <img src="/images/About.jpg">
+                <img src="/images/Volunteer.jpg">
                 <div class="carousel-container">
                   <div class="carousel-caption">
                     <h1></h1>
-                    <h1>About the<br>Foster Closet</h1>
-                    <p class="lead">Learn more about <br>our story and why<br>we do what we do</p>
+                    <h1>Volunteer at the<br>Foster Closet</h1>
+                    <p class="lead"><br><br></p>
                   </div>
                 </div>
               </div>
@@ -77,74 +77,87 @@
       
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-10 col-md-6">
-                  <div class="text-dark" style="background-color: rgb(230,230,230)">
-                      <div class=dark-col>
-                    <h4>Why We Exist</h4>
-                    <p>The Foster Closet exists to support foster children and the families
-                        that care for them. We do this by providing new and gently used clothing, shoes, toys, 
-                        books, and baby items to these families at no cost.</p><p></p>
-                  </div>
+                <div class="col-10 col-md-6">
+                    <div class="text-dark" style="background-color: rgb(230,230,230)">
+                        <div class="dark-col">
+                            <h4>Ways to Volunteer</h4>
+                            <ul>
+                                <li>Wash and sort donations</li>
+                                <li>Sort and hang donations</li>
+                                <li>Serve customers at the closet </li>
+                                <li>Write Grants</li>
+                                <li>Serve on the Board</li>
+                            </ul>    
+                            <p>Contact us if you have skills to offer that are not listed.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
               <div class="col-10 col-md-6">
-                <div class="text-dark" style="background-color: rgb(230,230,230)">
-                  <div class=dark-col>
-                    <h4>Our Story</h4>
-                    <p>When the Foster Closet began in 2016; it was open twice a month and 
-                      served 2-5 families each time. Today, it is open every Saturday and serves an average of 
-                      10+ families each week and hopes to do more in the future.</p>
-                  </div>
+                    <a href="#"><div class="text-dark" style="background-color: rgb(230,230,230)">
+                        <div class="dark-col">
+                            <h4>Volunteer Sign In</h4>
+                            <p>Sign in to help us track 
+                            volunteer hours</p>
+                        </div>
+                    </a>    
                 </div>
               </div>
             </div>    
-          </div>
-          <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12">
-                  <div class="text-white" style="background-color: #bd2130">
-                      <div id="board-head">
-                      <h4 class="text-align-center">Board Members</h4>
-                      </div>
+          </div>  
+          <div class="container">       
+          <form style="background-color: rgb(213, 208, 208)">
+                    <div class="col-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" action="" method="post">
+                        <fieldset>
+                        <legend class="text-left"><h4>Sign Up to Volunteer</h4></legend>
+                        <hr>
+                
+                        <!-- Name input-->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="name">Name</label>
+                            <div class="col-md-9">
+                            <input type="required" id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- Email input-->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                            <div class="col-md-9">
+                            <input type="required" id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- Interest input-->
+                        <div class="form-row">
+                                <label class="col-md-3 control-label" for="interest">Area of Interest</label>
+                                <div class="col-md-9">
+                                <input type="required" id="interest" name="interest" type="text" placeholder="Area of Interest" class="form-control">
+                                </div>
+                            </div>
+
+                        <!-- Message body -->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="info">Additional Info</label>
+                            <div class="col-md-9">
+                            <textarea class="form-control" id="info" name="info" placeholder="Additional info you want us to know..." rows="5"></textarea>
+                            </div>
+                        </div>
+                
+                        <!-- Form actions -->
+                        <div class="form-row">
+                            <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                            </div>
+                        </div>
+                        </fieldset>
+                        </form>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div> 
-            
-            <div class="row">
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/Kim.jpg" alt="Kim" style="width:100%">
-                  <h5>Kim Hendrickson</h5>
-                  <p class="title">President</p>
-                  <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                </div>
-              </div>  
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                    <img src="/images/Richelle.jpg" alt="Richelle" style="width:100%">
-                    <h5>Richelle Kikuji</h5>
-                    <p class="title">Vice President</p>
-                    <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                  </div>
-              </div> 
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/Shala.jpg" alt="Shala" style="width:100%">
-                  <h5>Shala Crow</h5>
-                  <p class="title">Secretary</p>
-                  <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/People Icon.jpg" alt="Empty Board Position" style="width:100%">
-                  <h5>Vacancy</h5>
-                  <p class="title">Join our Team</p>
-                  <p><button class="profile-button btn-danger" href="#">Inquire</button></p>
-                </div>
-              </div>
             </div>
-        </div>  
+        </form>  
     </body>
 
 <!--Footer-->
