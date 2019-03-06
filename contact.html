@@ -34,10 +34,10 @@
                 <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link" href="/about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="#">Contact</a>
               </li>
             </ul>
             <!--  /Use flexbox utility  -->
@@ -62,89 +62,67 @@
 
 
      <!-- Carousel-->
-     <div id="aboutCarousel" class="carousel">   
+     <div id="contactCarousel" class="carousel">   
         <div class="carousel-inner">
-                <img src="/images/About.jpg">
+                <img src="/images/Contact.jpg">
                 <div class="carousel-container">
                   <div class="carousel-caption">
-                    <h1></h1>
-                    <h1>About the<br>Foster Closet</h1>
-                    <p class="lead">Learn more about <br>our story and why<br>we do what we do</p>
                   </div>
                 </div>
               </div>
           </div><!-- /.carousel -->
-      
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-10 col-md-6">
-                  <div class="text-dark" style="background-color: rgb(230,230,230)">
-                      <div class=dark-col>
-                    <h4>Why We Exist</h4>
-                    <p>The Foster Closet exists to support foster children and the families
-                        that care for them. We do this by providing new and gently used clothing, shoes, toys, 
-                        books, and baby items to these families at no cost.</p><p></p>
-                  </div>
+    
+          <form style="background-color: rgb(230, 230, 230)" class="form-horizontal" action="" method="post">
+                    <div class="col-12">
+                    <div class="well well-sm">
+                        <fieldset>
+                        <legend class="text-left"><h4>Contact Us</h4></legend>
+                        <hr>
+                
+                        <!-- Name input-->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="name">Name</label>
+                            <div class="col-md-9">
+                            <input type="required" id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- Email input-->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                            <div class="col-md-9">
+                            <input type="required" id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                            </div>
+                        </div>
+                
+                        <!-- Interest input-->
+                        <div class="form-row">
+                                <label class="col-md-3 control-label" for="subject">Subject</label>
+                                <div class="col-md-9">
+                                <input type="required" id="subject" name="subject" type="text" placeholder="Subject" class="form-control">
+                                </div>
+                            </div>
+
+                        <!-- Message body -->
+                        <div class="form-row">
+                            <label class="col-md-3 control-label" for="message">Message</label>
+                            <div class="col-md-9">
+                            <textarea class="form-control" id="message" name="message" placeholder="Message..." rows="5"></textarea>
+                            </div>
+                        </div>
+                
+                        <!-- Form actions -->
+                        <div class="form-row">
+                            <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                            </div>
+                        </div>
+                        </fieldset>
+                    </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-10 col-md-6">
-                <div class="text-dark" style="background-color: rgb(230,230,230)">
-                  <div class=dark-col>
-                    <h4>Our Story</h4>
-                    <p>When the Foster Closet began in 2016; it was open twice a month and 
-                      served 2-5 families each time. Today, it is open every Saturday and serves an average of 
-                      10+ families each week and hopes to do more in the future.</p>
-                  </div>
-                </div>
-              </div>
-            </div>    
-          </div>
-          <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12">
-                  <div class="text-white" style="background-color: #bd2130">
-                      <div id="board-head">
-                      <h4 class="text-align-center">Board Members</h4>
-                      </div>
-                </div>
-              </div>
-            </div> 
-            
-            <div class="row">
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/Kim.jpg" alt="Kim" style="width:100%">
-                  <h5>Kim Hendrickson</h5>
-                  <p class="title">President</p>
-                  <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                </div>
-              </div>  
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                    <img src="/images/Richelle.jpg" alt="Richelle" style="width:100%">
-                    <h5>Richelle Kikuji</h5>
-                    <p class="title">Vice President</p>
-                    <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                  </div>
-              </div> 
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/Shala.jpg" alt="Shala" style="width:100%">
-                  <h5>Shala Crow</h5>
-                  <p class="title">Secretary</p>
-                  <p><button class="profile-button btn-danger" href="#">Contact</button></p>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">  
-                <div class="profile">
-                  <img src="/images/People Icon.jpg" alt="Empty Board Position" style="width:100%">
-                  <h5>Vacancy</h5>
-                  <p class="title">Join our Team</p>
-                  <p><button class="profile-button btn-danger" href="#">Inquire</button></p>
-                </div>
-              </div>
             </div>
-        </div>  
+        </form>  
     </body>
 
 <!--Footer-->

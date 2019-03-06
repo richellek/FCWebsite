@@ -58,6 +58,10 @@
   padding-bottom: 0px;
 }
 
+#contactCarousel .carousel-container {
+  padding-bottom: 0px;
+}
+
 
 /* CARDS with Images */
 .card {
